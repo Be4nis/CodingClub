@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <style>
+      h1 {
+          color: #333;
+      }
+      input {
+          padding: 8px;
+          font-size: 16px;
+      }
+      button {
+          padding: 10px;
+          font-size: 16px;
+          cursor: pointer;
+      }
+    </style>
+    <link rel = "stylesheet" href="css/style.css">
+  </head>
+  <body class="bg-gradient-to-r from-cyan-200 to-cyan-400">
+    <div class="flex h-screen w-screen flex-col items-center justify-center">
+      <h1 class="text-center text-7xl font-bold">Number Guessing Game</h1>
+      <p class="text-3xl font-semibold">Guess a number between 1 and 100:</p>
+
+      <input type="number" id="userGuess" placeholder="Enter your guess" class="border-2 border-slate-900" />
+      <br />
+      <button onclick="checkGuess()" class="rounded-lg bg-slate-500">Submit Guess</button>
+
+      <p id="message"></p>
+      <p>Attempts: <span id="attempts">0</span></p>
+    </div>
+
+    <script>
+      const secretNumber = Math.floor(Math.random() * 100) + 1;
+
+      let attempts = 0;
+
+      function checkGuess() {
+          const userGuess = parseInt(document.getElementById('userGuess').value);
+
+          if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+              setMessage('Please enter a valid number between 1 and 100.');
+              return;
+          }
+
+          attempts++;
+
+          if (userGuess === secretNumber) {
+              setMessage(`Congratulations! You guessed the correct number ${secretNumber} in ${attempts} attempts.`, 'green');
+              disableInputAndButton();
+          } else {
+              const hint = userGuess < secretNumber ? 'higher' : 'lower';
+              setMessage(`Wrong guess. Try a ${hint} number.`, 'red');
+          }
+
+          document.getElementById('attempts').innerText = attempts;
+      }
+
+      function setMessage(msg, color = 'black') {
+          const messageElement = document.getElementById('message');
+          messageElement.style.color = color;
+          messageElement.textContent = msg;
+      }
+
+      function disableInputAndButton() {
+          document.getElementById('userGuess').disabled = true;
+          document.querySelector('button').disabled = true;
+      }
+    </script>
+  </body>
+</html>
