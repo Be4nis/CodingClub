@@ -6,47 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LCSS Clubs</title>
     <link rel="stylesheet" href="css/clubs.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" type="image/x-icon" href="https://central.tvdsb.ca/en/images/structure/logo.jpg">
 </head>
+        <div class="backwrap gradient">
+            <div class="back-shapes"> 
 
 
-<body>
-    <div class="backwrap gradient">
+                <div class="grid grid-cols-1 grid-rows-5 w-4/5 m-auto mt-10 mb-10 gap-y-20 border-2">
+                    
+                    <div class="grid row-start-1 row-end-1 grid-cols-3 w-4/5 m-auto">
+                        <div class="col-start-1 col-end-1">
+                            <img class="w-28 m-auto" src="https://cdn.discordapp.com/attachments/725390783716393041/1204194472447967282/central.png?ex=65d3d87f&is=65c1637f&hm=306e7ba4d30c23e003e73d7ad620175cb4c8a9fe323dce59938541542514030d&">
+                        </div>
+                        <div class="flex col-start-2 col-end-4 items-center justify-left">
+                            <h1 class="text-7xl">Central Clubs</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="row-start-2 row-end-6">
+                        <div class="flex flex-row">
+                            <button class="px-8 py-4 text-xl duration-300 active:bg-slate-200 text-indigo-400" onclick="openClub(event, 'clubs', 'clubLink')" id="clubLink" name="links">Clubs</button>
+                            <button class="px-8 py-4 text-xl duration-300 active:bg-slate-200 text-indigo-400 " onclick="openClub(event, 'sports', 'sportLink')" id="sportLink" name="links">Sports</button>
+                        </div>
 
-        <div class="back-shapes">
+                        <div id="clubs" class="hidden duration-1000" name="tab">
+                            <div class="flex flex-wrap p-10 gap-x-32 gap-y-16 justify-center">
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Club</div>
+                                </div>
 
-            <div class="grid grid-cols-4 grid-rows-2 gap-4 w-screen h-screen">
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Club</div>
+                                </div>
 
-                <div class="col-start-2 col-span-2">01
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Club</div>
+                                </div>
 
-                    <p> hello world </p>
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Club</div>
+                                </div>
+                            </div>
+
+                            
+                            
+                        </div>
+                        <div id="sports" class="hidden" name="tab">
+                            <div class="flex flex-wrap p-10 gap-x-32 gap-y-16 justify-center">
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Sport</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Sport</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Sport</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Sport</div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        
+                    </div>
 
                 </div>
-
-                <div class="">02</div>
-
-                <span class="floating circle"
-                    style="top:66.59856996935649%;left:13.020833333333334%;animation-delay:-0.9s;"></span>
-                <span class="floating triangle"
-                    style="top:31.46067415730337%;left:33.59375%;animation-delay:-4.8s;"></span>
-                <span class="floating cross"
-                    style="top:76.50663942798774%;left:38.020833333333336%;animation-delay:-4s;"></span>
-                <span class="floating square"
-                    style="top:21.450459652706844%;left:14.0625%;animation-delay:-2.8s;"></span>
-                <span class="floating square"
-                    style="top:58.12053115423902%;left:56.770833333333336%;animation-delay:-2.15s;"></span>
-                <span class="floating square"
-                    style="top:8.682328907048008%;left:72.70833333333333%;animation-delay:-1.9s;"></span>
-                <span class="floating cross"
-                    style="top:31.3585291113381%;left:58.541666666666664%;animation-delay:-0.65s;"></span>
-                <span class="floating cross"
-                    style="top:69.96935648621042%;left:81.45833333333333%;animation-delay:-0.4s;"></span>
-                <span class="floating circle"
-                    style="top:15.117466802860061%;left:32.34375%;animation-delay:-4.1s;"></span>
-                <span class="floating circle"
-                    style="top:13.074565883554648%;left:45.989583333333336%;animation-delay:-3.65s;"></span>
-                <span class="floating cross"
-                    style="top:55.87334014300306%;left:27.135416666666668%;animation-delay:-2.25s;"></span>
+    
+    
+    
+    
+                <span class="floating circle" style="top:66.59856996935649%;left:13.020833333333334%;animation-delay:-0.9s;"></span>
+                <span class="floating triangle" style="top:31.46067415730337%;left:33.59375%;animation-delay:-4.8s;"></span>
+                <span class="floating cross" style="top:76.50663942798774%;left:38.020833333333336%;animation-delay:-4s;"></span>
+                <span class="floating square" style="top:21.450459652706844%;left:14.0625%;animation-delay:-2.8s;"></span>
+                <span class="floating square" style="top:58.12053115423902%;left:56.770833333333336%;animation-delay:-2.15s;"></span>
+                <span class="floating square" style="top:8.682328907048008%;left:72.70833333333333%;animation-delay:-1.9s;"></span>
+                <span class="floating cross" style="top:31.3585291113381%;left:58.541666666666664%;animation-delay:-0.65s;"></span>
+                <span class="floating cross" style="top:69.96935648621042%;left:81.45833333333333%;animation-delay:-0.4s;"></span>
+                <span class="floating circle" style="top:15.117466802860061%;left:32.34375%;animation-delay:-4.1s;"></span>
+                <span class="floating circle" style="top:13.074565883554648%;left:45.989583333333336%;animation-delay:-3.65s;"></span>
+                <span class="floating cross" style="top:55.87334014300306%;left:27.135416666666668%;animation-delay:-2.25s;"></span>
                 <span class="floating cross" style="top:49.54034729315628%;left:53.75%;animation-delay:-2s;"></span>
                 <span class="floating cross"
                     style="top:34.62717058222676%;left:49.635416666666664%;animation-delay:-1.55s;"></span>
@@ -89,10 +169,27 @@
                     style="top:11.542390194075587%;left:91.51041666666667%;animation-delay:-0.1s;"></span>
             </div>
 
+          <script>
+            function openClub(evt, clubName, linkName) {
+              var i, tabs, links;
+              tabs = document.getElementsByName("tab");
+              links = document.getElementsByName("links");
+              for (i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+              }
+
+              for(i=0; i < links.length; i++) {
+                links[i].style.color = "#Ffe4bb";
+                links[i].style.borderBottom = "none";
+              }
 
 
-        </div>
-    </div>
+              document.getElementById(clubName).style.display = "flex";
+              document.getElementById(linkName).style.color = "#f8b658";
+              document.getElementById(linkName).style.borderBottom = "solid";
+            }
+        </script>
+
 </body>
 
 
