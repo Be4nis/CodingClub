@@ -4,21 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LCSS Clubs</title>
+    <link rel="stylesheet" href="css/clubs.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" type="image/x-icon" href="https://central.tvdsb.ca/en/images/structure/logo.jpg">
 </head>
-
-<div class="grid grid-cols-4 grid-rows-2 gap-4">
-    <div class="col-start-2 col-span 2">01
-        <p> djneqfjenfkwejnf
-    </div>
-    <div class=""></div>
-    
-  </div>
-
         <div class="backwrap gradient">
             <div class="back-shapes"> 
-                
+
+
+                <div class="grid grid-cols-1 grid-rows-5 w-4/5 m-auto mt-10 mb-10 gap-y-20 border-2">
+                    
+                    <div class="grid row-start-1 row-end-1 grid-cols-3 w-4/5 m-auto">
+                        <div class="col-start-1 col-end-1">
+                            <img class="w-28 m-auto" src="https://cdn.discordapp.com/attachments/725390783716393041/1204194472447967282/central.png?ex=65d3d87f&is=65c1637f&hm=306e7ba4d30c23e003e73d7ad620175cb4c8a9fe323dce59938541542514030d&">
+                        </div>
+                        <div class="flex col-start-2 col-end-4 items-center justify-left">
+                            <h1 class="text-7xl">Central Clubs</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="row-start-2 row-end-6">
+                        <div class="flex flex-row">
+                            <button class="px-8 py-4 text-xl duration-300 active:bg-slate-200 text-indigo-400" onclick="openClub(event, 'clubs', 'clubLink')" id="clubLink" name="links">Clubs</button>
+                            <button class="px-8 py-4 text-xl duration-300 active:bg-slate-200 text-indigo-400 " onclick="openClub(event, 'sports', 'sportLink')" id="sportLink" name="links">Sports</button>
+                        </div>
+
+                        <div id="clubs" class="hidden duration-1000" name="tab">
+                            <div class="flex flex-wrap p-10 gap-x-32 gap-y-16 justify-center">
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Club</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Club</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Club</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Club</div>
+                                </div>
+                            </div>
+
+                            
+                            
+                        </div>
+                        <div id="sports" class="hidden" name="tab">
+                            <div class="flex flex-wrap p-10 gap-x-32 gap-y-16 justify-center">
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Sport</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Sport</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Sport</div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="">
+                                        <img class="border-2" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="text-3xl text-center border-x-2 border-b-2 font-bold p-2">Test Sport</div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
     
     
     
@@ -57,6 +149,27 @@
                 <span class="floating square" style="top:11.542390194075587%;left:91.51041666666667%;animation-delay:-0.1s;"></span>
             </div>
           </div>
+
+          <script>
+            function openClub(evt, clubName, linkName) {
+              var i, tabs, links;
+              tabs = document.getElementsByName("tab");
+              links = document.getElementsByName("links");
+              for (i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+              }
+
+              for(i=0; i < links.length; i++) {
+                links[i].style.color = "#Ffe4bb";
+                links[i].style.borderBottom = "none";
+              }
+
+
+              document.getElementById(clubName).style.display = "flex";
+              document.getElementById(linkName).style.color = "#f8b658";
+              document.getElementById(linkName).style.borderBottom = "solid";
+            }
+        </script>
 
 </body>
 </html>
