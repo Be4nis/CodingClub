@@ -9,7 +9,6 @@ function App() {
 
         <div class="grid grid-cols-3 w-4/5 m-auto">
           <div class="col-span-1">
-            <img class="w-28 m-auto" src="https://cdn.discordapp.com/attachments/725390783716393041/1204194472447967282/central.png?ex=65d3d87f&is=65c1637f&hm=306e7ba4d30c23e003e73d7ad620175cb4c8a9fe323dce59938541542514030d&"></img>
           </div>
           <div class="flex col-span-2 items-center justify-left">
             <h1 class="text-7xl">Central Clubs</h1>
