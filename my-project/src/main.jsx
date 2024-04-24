@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Title from './Title' 
 import App from './App' 
 import Calendar from './Calendar' 
+import Textbooks from './Textbooks'
 
 import './index.css'
 
@@ -11,5 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Title />
     <App />
     <Calendar />
+    <Textbooks />
   </React.StrictMode>,
 )

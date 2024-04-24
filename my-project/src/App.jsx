@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div class="grid w-4/5 m-auto mt-10 mb-10 gap-y-20">
+      <div class="grid w-4/5 m-auto mt-10 mb-10 gap-y-20" id="clubs">
 
         <div class="grid grid-cols-3 w-4/5 m-auto">
           <div class="col-span-1">
