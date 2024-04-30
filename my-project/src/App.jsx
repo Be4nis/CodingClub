@@ -33,7 +33,7 @@ function App() {
                     src="https://imgs.search.brave.com/oT94WrFWLNAX8ZwCJaOvKLzXC8bjgg2cx9mydX-WYxM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA0LzgxLzMzLzY3/LzM2MF9GXzQ4MTMz/Njc5M18yUEF5czcx/N2cxdjBhbXl1aTJ3/WEJzNkc1UTNmcGph/cS5qcGc"></img>
                 </div>
                 <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
-                  <h2 class="text-3xl text-center font-bold p-2">Progrmming Club</h2>
+                  <h2 class="text-3xl text-center font-bold p-2">Programming Club</h2>
                 </div>
               </div>
 
