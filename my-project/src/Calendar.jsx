@@ -9,7 +9,7 @@ export default function Calendar() {
                 </div>
 
                 <div class="row-span-4">
-                    <iframe class="w-full h-full border-2"
+                    <iframe class="w-full h-full border-10"
                         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&showTitle=0&showTz=0&showCalendars=0&showPrint=0&src=MjY3ZjI1YzEzYzAzMGEzNTVkYTg0NmM1NDg3YWZlNjYwMTk1MGM0OTljZjU2ZDkzZmUxNWNmZGM0MzlkMTJhMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5"></iframe>
                 </div>
             </div>
