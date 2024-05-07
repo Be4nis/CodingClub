@@ -3,15 +3,18 @@ import Calendar from './Calendar'
 import Textbooks from './Textbooks'
 import Title from './Title' 
 import Work from './Work.jsx'
+import Front from './Front.jsx'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Title />
+      <Front />
       <Calendar />
       <Textbooks />
       <Work />
+      <Title />
     </>
   )
 }

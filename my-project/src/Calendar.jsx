@@ -2,7 +2,7 @@
 export default function Calendar() {
     return (
         <>
-            <div class="grid grid-cols-1 grid-rows-5 w-4/5 h-screen m-auto">
+            <div class="grid grid-cols-1 grid-rows-5 w-4/5 h-screen m-auto mt-10">
 
                 <div class="row-span-1 flex items-center justify-center w-auto">
                     <h1 class="text-7xl col-span-2 font-mono">Calendar</h1>
