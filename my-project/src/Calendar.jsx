@@ -5,7 +5,7 @@ export default function Calendar() {
             <div class="grid grid-cols-1 grid-rows-5 w-4/5 h-screen m-auto">
 
                 <div class="row-span-1 flex items-center justify-center w-auto">
-                    <h1 class="text-7xl col-span-2">Calendar</h1>
+                    <h1 class="text-7xl col-span-2 text-purple-500 font-bold">Calendar</h1>
                 </div>
 
                 <div class="row-span-4">

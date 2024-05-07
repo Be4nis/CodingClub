@@ -6,7 +6,7 @@ export default function Textbooks() {
         
             <div className="flex flex-wrap w-full mt-32 mb-32" id="textbooks">
 
-                <div className="w-4/5 h-24 text-7xl text-center mx-auto mb-8">
+                <div className="w-4/5 h-24 text-7xl text-center mx-auto mb-8 text-amber-200 font-bold">
                     <h1>Textbooks</h1>
                 </div>
 
@@ -54,7 +54,7 @@ export default function Textbooks() {
 
                     <div className="h-24">
                         <a href="https://doku.pub/documents/nelson-biology-12pdf-30j71j2z320w">
-                            <button className="active:bg-white px-12 w-full h-full over:text-purple-300 duration-300 text-4xl text-purple-500 rounded-full">
+                            <button className="active:bg-white px-12 w-full h-full hover:text-purple-300 duration-300 text-4xl text-purple-500 rounded-full">
                                 Biology 12</button></a>
                     </div>
 

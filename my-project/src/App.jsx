@@ -11,7 +11,7 @@ function App() {
           <div class="col-span-1">
           </div>
           <div class="flex col-span-2 items-center justify-left">
-            <h1 class="text-7xl">Central Clubs</h1>
+            <h1 class="text-7xl text-amber-200 font-bold">Central Clubs</h1>
           </div>
         </div>
 
