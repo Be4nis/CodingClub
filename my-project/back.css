@@ -93,3 +93,8 @@
       -webkit-transform: translateY(0%);
     }
   }
+
+  .font-link {
+    font-family: 'Hanalei Fill', cursive;
+  }
+ 
