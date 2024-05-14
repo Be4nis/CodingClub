@@ -4,6 +4,7 @@ import Textbooks from './Textbooks'
 import Title from './Title' 
 import Work from './Work.jsx'
 import Front from './Front.jsx'
+import NotesUpload from './NotesUpload.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <Textbooks />
       <Work />
       <Title />
+      <NotesUpload/>
     </>
   )
 }
