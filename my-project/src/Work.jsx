@@ -1,5 +1,5 @@
 function App() {
-    var imageSize = "border-4 border-purple-700 w-96 h-96 object-cover"
+    var imageSize = "border-4 border-cus-gold w-96 h-96 object-cover"
     return (
         <>
             <div class="grid w-4/5 m-auto mt-10 mb-10 gap-y-20">
