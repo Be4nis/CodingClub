@@ -4,12 +4,8 @@ function App() {
         <>
             <div class="grid w-4/5 m-auto mt-10 mb-10 gap-y-20">
 
-                <div class="grid grid-cols-3 w-4/5 m-auto">
-                    <div class="col-span-1">
-                    </div>
-                    <div class="flex col-span-2 items-center justify-left">
-                        <h1 class="text-7xl">School Work</h1>
-                    </div>
+            <div class="row-span-1 flex items-center justify-center w-auto">
+                    <h1 class="text-7xl col-span-2 font-mono">School Work</h1>
                 </div>
 
                 <div class="">
