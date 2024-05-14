@@ -13,7 +13,6 @@ function App() {
     <>
       <Front />
       <Calendar />
-      <Textbooks />
       <Work />
       <Title />
       <NotesUpload/>
