@@ -2,11 +2,11 @@ export default function NotesUpload() {
 
     return (
         <>
-        <div className="w-4/5 h-24  text-center mx-auto mb-8 text-amber-200 font-bold" id="NotesUpload">
+        <div className="w-4/5 h-24  text-center mx-auto mb-8 text-amber-200 font-bold" id="NotesView">
             <h1 className = "text-7xl">Notes Upload</h1>
             <p className = "text-2xl py-10">Upload your notes here and view notes from your peers below!</p>
         </div>
-        <div className = "text-center">
+        <div className = "text-center pb-20">
             <form  method="post" action="upload.php" enctype="multipart/form-data">
                 <label class="block">
                     <input type="file" class="my-10 text-1xl text-slate-500
@@ -26,8 +26,10 @@ export default function NotesUpload() {
                 bg-violet-50 text-violet-900
                 hover:bg-violet-300" for="submit">Submit</label>
             </form>
+
         <br></br>
         </div>
+
         </>
     )
 }

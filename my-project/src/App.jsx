@@ -5,6 +5,7 @@ import Title from './Title'
 import Work from './Work.jsx'
 import Front from './Front.jsx'
 import NotesUpload from './NotesUpload.jsx'
+import NotesView from './NotesView.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <Work />
       <Title />
       <NotesUpload/>
+      <NotesView/>
     </>
   )
 }
