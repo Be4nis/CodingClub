@@ -2,10 +2,10 @@ function App() {
     var imageSize = "border-4 border-cus-gold w-96 h-96 object-cover"
     return (
         <>
-            <div class="grid w-4/5 m-auto mt-10 mb-10 gap-y-20">
+            <div class="grid w-11/12 m-auto mt-24 mb-10 gap-y-20">
 
             <div class="row-span-1 flex items-center justify-center w-auto">
-                <h1 class="text-7xl col-span-2 font-mono">School Work</h1>
+                <h1 class="text-7xl col-span-2 text-cus-gold font-bold">School Work</h1>
             </div>
 
                 <div class="">
@@ -14,7 +14,7 @@ function App() {
                     <div id="clubs" class="text-cus-gold w-full" name="tab">
 
 
-                        <div class="flex flex-wrap p-10 gap-x-32 gap-y-16 justify-center">
+                        <div class="flex flex-wrap p-10 gap-x-20 gap-y-16 justify-center">
                             <div class="grid grid-rows-5">
                                 <div class="relative duration-300 hover:opacity-50 row-span-4" onmouseover="showWords(event, 'clubdesc1')" onmouseout="hideWords(event, 'clubdesc1')">
                                     <a href="https://www.creativebookpublishing.ca/books/McGraw-Hill-Ryerson-Advanced-Functions-12.pdf">
